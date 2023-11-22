@@ -1,0 +1,36 @@
+﻿<Window x:Class="Практическая_работа_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Практическая_работа_6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="пара1_1" HorizontalAlignment="Left" Margin="26,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="187" Height="35"/>
+        <TextBox x:Name="пара1_2" HorizontalAlignment="Left" Margin="26,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="187" Height="36"/>
+        <TextBox x:Name="пара3_2" HorizontalAlignment="Left" Margin="515,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="188" IsReadOnly="True" Height="36"/>
+        <TextBox x:Name="пара2_1" HorizontalAlignment="Left" Margin="288,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="187" Height="35"/>
+        <TextBox x:Name="пара2_2" HorizontalAlignment="Left" Margin="288,162,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="187" Height="36"/>
+        <TextBox x:Name="пара3_1" HorizontalAlignment="Left" Margin="515,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="188" IsReadOnly="True" Height="35"/>
+        <Label Content="1 пара чисел" HorizontalAlignment="Left" Margin="26,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.566,0.695" Height="52" Width="127"/>
+        <Label Content="2 пара чисел" HorizontalAlignment="Left" Margin="288,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.566,0.695" Height="52" Width="126"/>
+        <Label Content="3 пара чисел" HorizontalAlignment="Left" Margin="530,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.566,0.695" Height="52" Width="127"/>
+        <Button Content="-1 и Расчитать сумму " HorizontalAlignment="Left" Margin="26,219,0,0" VerticalAlignment="Top" Width="187" Click="Button_Сложить_1_Пару_Чисел" ToolTip="Расчитать сумму 1-ой пары чисел " Height="39"/>
+        <Button Content="+1 и Расчитать сумму" HorizontalAlignment="Left" Margin="26,277,0,0" VerticalAlignment="Top" Width="187" Click="Button_Сложить_1_Пару_Чисел_1" ToolTip="Расчитать сумму 1-ой пары чисел " Height="39" />
+        <Button x:Name="Button_Сложить_2_Пару_Чисел" Content="-1 и Расчитать сумму " HorizontalAlignment="Left" Margin="288,219,0,0" VerticalAlignment="Top" Width="187" Click="Button_Сложить_2_Пару_Чисел_Click" ToolTip="Расчитать сумму 2-ой пары чисел "  Height="39"/>
+        <Button x:Name="Button_Сложить_2_Пару_Чисел_1" Content="+1 и Расчитать сумму " HorizontalAlignment="Left" Margin="288,277,0,0" VerticalAlignment="Top" Width="187" Click="Button_Сложить_2_Пару_Чисел_Click" ToolTip="Расчитать сумму 2-ой пары чисел "  Height="39"/>
+        <Button Content="Расчитать сумму" HorizontalAlignment="Left" Margin="515,219,0,0" VerticalAlignment="Top" Width="188" Click="Button_Сложить_Пары_Чисел" ToolTip="Расчитать сумму 1-ой и 2-ой пары чисел " Height="97"/>
+        <Menu VerticalAlignment="Top" Grid.ColumnSpan="4">
+            <MenuItem Header="О программе" Click="MenuItem_Click_О_программе" ToolTip="Информация о программе"  >
+            </MenuItem>
+            <MenuItem Header="Выход" Click="MenuItem_Click_Выход" ToolTip="Закрывает рабочую программу" >
+            </MenuItem>
+            <MenuItem Header="Очистить" Click="MenuItem_Click_Очистить" ToolTip="Очищает" >
+            </MenuItem>
+        </Menu>
+
+
+
+    </Grid>
+</Window>
